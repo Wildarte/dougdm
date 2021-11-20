@@ -1,0 +1,33 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+:root{ /* root representa o elemento html */
+    /* color */
+    --main-color: #092641;
+    --sec-color: #081C57;
+    
+    /* title size */
+    --lg-title: 2.5em;
+    --md-title: 1.9em;
+    --sm-title: 1.4em;
+    --text: 1em;
+}
+
+/* general style */
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+/* general style */
+
+
+.over_header{
+    width: 100%;
+    border: 1px solid;
+}
+.over_header .item_over_header{
+
+}
