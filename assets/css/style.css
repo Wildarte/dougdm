@@ -194,3 +194,99 @@ header.header{
     cursor: pointer;
 }
 /* style intro home */
+
+
+
+/* section services */
+.section_services{
+    padding: 40px 10px;
+}
+.services_header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.services_header ul{
+    flex-basis: 80%;
+    display: flex;
+    padding: 20px 0 0 0;
+    border-bottom: 1px solid;
+    
+}
+.services_header ul li{
+    padding: 10px 20px 10px 2px;
+    margin-right: 10px;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.services_header ul li::before{
+    content: "";
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 100%;
+    background-color: var(--third-color);
+    transition: all .23s;
+}
+.item_card_over{
+    width: 50%!important;
+    transition: all .23s;
+}
+
+.services_header ul li a{
+    margin-right: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 300;
+    position: relative;
+}
+.section_services .section_services_body{
+    display: 100%;
+    padding: 20px 0;
+}
+.section_services .section_services_body .type_services{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.type_services .type_service_header{
+    flex-basis: 16%;
+}
+.type_services .type_service_body{
+    flex-basis: 78%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.type_services .type_service_body .card_service{
+    min-width: calc(25% - 20px);
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid;
+    position: relative;
+    left: -20%;
+    transition: all .13s;
+}
+
+
+
+
+.button_next_card_service, .button_previous_card_service{
+    flex-basis: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.button_next_card_service i, .button_previous_card_service i{
+    font-size: 1.8em;
+    border: 1px solid;
+}
+.button_next_card_service i:hover, .button_previous_card_service i:hover{
+    cursor: pointer;
+}
+/* section services */
