@@ -1,17 +1,17 @@
 *{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
 }
-
 :root{ /* root representa o elemento html */
     /* color */
     --main-color: #092641;
-    --sec-color: #081C57;
+    --sec-color: #3c5974;
+    --third-color: #2E75B6;
     
     /* title size */
     --lg-title: 2.5em;
     --md-title: 1.9em;
     --sm-title: 1.4em;
+    --lg-text: 1.2em;
     --text: 1em;
 }
 
@@ -19,15 +19,102 @@
 .container{
     max-width: 1180px;
     margin: 0 auto;
-    border: 1px solid;
 }
 /* general style */
 
-
+header.header{
+    width: 100%;
+}
 .over_header{
     width: 100%;
-    border: 1px solid;
+    text-align: right;
+    padding: 5px;
+    background-color: var(--sec-color);
 }
 .over_header .item_over_header{
+    color: #fff;
+    margin-right: 20px;
+    font-size: var(--lg-text);
+    font-weight: 300;
+}
+.over_header .item_over_header_social{
+    color: #fff;
+    margin-left: 8px;
+}
 
+.header_main{
+    width: 100%;
+    background-color: var(--main-color);
+}
+.header_main_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header_main_content .header_logo{
+    flex-basis: 18%;
+}
+.header_main_content .header_logo img{
+    max-width: 100%;
+}
+.header_main_content nav.header_menu{
+    flex-basis: 60%;
+}
+.header_main_content nav.header_menu ul{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.header_main_content nav.header_menu ul li{
+    margin: 0;
+    overflow: hidden;
+}
+.header_main_content nav.header_menu ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: 0 5px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.header_main_content nav.header_menu ul li a::after{
+    content: " ]";
+    display: inline;
+    color: var(--third-color);
+    font-weight: 600;
+    position: absolute;
+    right: -20px;
+    transition: all .23s;
+}
+.header_main_content nav.header_menu ul li a::before{
+    content: "[ ";
+    display: inline;
+    color: var(--third-color);
+    font-weight: 600;
+    position: absolute;
+    left: -20px;
+    transition: all .23s;
+}
+.header_main_content nav.header_menu ul li:hover a::before{
+    display: inline!important;
+    left: -4px;
+    transition: all .23s;
+}
+.header_main_content nav.header_menu ul li:hover  a::after{
+    display: inline!important;
+    right: -4px;
+    transition: all .23s;
+}
+.header_main_content .header_cta a{
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #fff;
+    transition: all .2s;
+}
+.header_main_content .header_cta a:hover{
+    background-color: #fff;
+    color: #222;
 }
