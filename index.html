@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/my-carousel.css">
     <title>dm11</title>
+    <!-- 
+    <style>
+        .owl-carousel{
+            border: 1px solid;
+            display: flex;
+            width: 900px;
+            margin: auto;
+            position: relative;
+        }
+        .owl-carousel .card{
+            border: 1px solid;
+        }
+        .owl-next span, .owl-prev span{
+            font-size: 5em;
+        }
+        .owl-next span{
+            position: absolute;
+            right: -32px;
+            top: 30%;
+        }
+        .owl-prev{
+            position: absolute;
+            left: -32px;
+            top: 30%;
+        }
+    </style>
+     -->
 </head>
 <body>
     
@@ -27,7 +57,7 @@
                 </div>
                 <nav class="header_menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a  href="#">Home</a></li>
                         <li><a href="#">Serviços</a></li>
                         <li><a href="#">Parceiros</a></li>
                         <li><a href="#">Seja um Parceiro</a></li>
@@ -49,207 +79,393 @@
                 <p id="subtitle_intro">É isso que fazemos em nossos clientes</p>
                 <div class="home_intro_ctas">
                     <button class="home_cta_atend">Atendimento</button>
-                    <button class="home_cta_services">Serviços</button>
+                    <button href="#servicos" class="home_cta_services">Serviços</button>
                 </div>
             </div>
         </section>
 
-        <section class="container section_services">
+        <section class="container section_services" id="servicos">
             <header class="services_header">
                 <ul>
-                    <li><a href="#">Simulação de ataque</a></li>
-                    <li><a href="#">Consultorias</a></li>
-                    <li><a href="#">Educação</a></li>
+                    <li><a href="#simulacao">Simulação de ataque</a></li>
+                    <li><a href="#consultorias">Consultorias</a></li>
+                    <li><a href="#educacao">Educação</a></li>
                 </ul>
             </header>
             
+
+            <!-- slider services -->
             <section class="section_services_body">
-                <div class="type_services">
+                <div class="type_services" id="simulacao">
                     <header class="type_service_header">
                         <h2>Simulação de ataque</h2>
                     </header>
-                    <div class="button_previous_card_service">
-                        <i id="btn-previous-service" class="bi bi-caret-left"  style="display: none;"></i>
+                    <div class="type_service_body">
+                        <div class="owl-carousel">
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <section class="type_service_body">
-                        <article class="card_service cars" style="left: 0;">
-                            <header class="card_service_header"><h3>1 Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service cars" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                        <article class="card_service" style="left: 0;">
-                            <header class="card_service_header"><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
-                            </div>
-                            <div>
-                                <button>Saiba Mais</button>
-                            </div>
-                        </article>
-                    </section>
-                    <div class="button_next_card_service">
-                        <i id="btn-next-service" class="bi bi-caret-right"></i>
-                    </div>
+                    
                 </div>
-                <div>
-                    <header>
+                <div class="type_services" id="consultorias">
+                    <header class="type_service_header">
                         <h2>Consultorias</h2>
                     </header>
-                    <section>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                    <div class="type_service_body">
+                        <div class="owl-carousel">
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <header>
+                <div class="type_services" id="educacao">
+                    <header class="type_service_header">
                         <h2>Educação</h2>
                     </header>
-                    <section>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                    <div class="type_service_body">
+                        <div class="owl-carousel">
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                        <article>
-                            <header><h3>Pentest em aplicações web</h3></header>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione sed dolorem molestiae, voluptatum repudiandae et, esse quae corporis dolores libero labore assumenda repellat nemo exercitationem!</p>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                            <div>
-                                <button>Saiba Mais</button>
+                            <div class="card_service">
+                                <header class="card_service_header">
+                                    <div class="card_icon">
+                                        <img src="./assets/img/icons/database.svg" alt="">
+                                    </div>
+                                    <h3>1 Pentest em aplicações web</h3>
+                                </header>
+                                <div class="card_service_body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
+                                </div>
+                                <div class="card_service_bottom">
+                                    <button>Saiba Mais</button>
+                                </div>
                             </div>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
                 </div>
             </section>
-            
+            <!-- slider services -->
         </section>
-
-        <section>
-            <div>
+        
+        <section class="section_about">
+            <div class="container section_about_content">
                 <div>
                     <header>
                         <h2>SOBRE A DM11CYBERSEC</h2>
@@ -307,6 +523,42 @@
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/card-service.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.services_header ul li a[href^="#"], .home_cta_services').on('click',function(e){
+                e.preventDefault();
+                var id = $(this).attr('href'),targetOffset=$(id).offset().top;
+                $('html, body').animate({
+                    scrollTop: targetOffset-100
+                },500);
+            });
+            $(".owl-carousel").owlCarousel({
+                loop: false,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:4,
+                        nav:true,
+                        loop:false,
+                        margin: 20
+                    }
+                }
+            });
+
+            console.log(document.querySelector('.owl-carousel').clientWidth);
+
+        });
+
+
+    </script>
 </body>
 </html>

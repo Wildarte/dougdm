@@ -47,6 +47,8 @@ header.header{
 .header_main{
     width: 100%;
     background-color: var(--main-color);
+    top: -150px;/* coloquei esse valor pois quando der o scroll e o menu ficar fixo no topo vai dar o efeito de rolando para baixo */
+    transition: all .42s;
 }
 .header_main_content{
     display: flex;
@@ -196,97 +198,69 @@ header.header{
 /* style intro home */
 
 
-
-/* section services */
-.section_services{
-    padding: 40px 10px;
-}
 .services_header{
-    width: 100%;
+    margin: 20px 0 10px;
     display: flex;
-    justify-content: flex-end;
-}
-.services_header ul{
-    flex-basis: 80%;
-    display: flex;
-    padding: 20px 0 0 0;
-    border-bottom: 1px solid;
+    justify-content: right;
     
 }
-.services_header ul li{
-    padding: 10px 20px 10px 2px;
-    margin-right: 10px;
-    background-color: var(--main-color);
-    position: relative;
+.services_header ul{
+    display: flex;
+    flex-basis: calc(80% - 52px);
+    padding: 40px 0 0 0;
+    border-bottom: 1px solid;
+    overflow-y: hidden;
 }
-
+.services_header ul li{
+    margin-right: 20px;
+    padding: 10px 40px 10px 5px;
+    background-color: var(--sec-color);
+    position: relative;
+    bottom: 0;
+    transition: all .18s;
+}
 .services_header ul li::before{
     content: "";
-    display: inline;
+    width: 20px;
+    height: 100%;
+    background-color: #000;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
-    height: 100%;
-    background-color: var(--third-color);
-    transition: all .23s;
+    transition: all .18s;
 }
-.item_card_over{
-    width: 50%!important;
-    transition: all .23s;
+.services_header ul li:hover::before{
+    width: 50%;
 }
-
 .services_header ul li a{
-    margin-right: 5px;
-    margin-bottom: 0;
     color: #fff;
-    font-size: 1.4em;
-    font-weight: 300;
     position: relative;
 }
-.section_services .section_services_body{
-    display: 100%;
-    padding: 20px 0;
+
+.type_service_header h2::after{
+    content: "";
+    width: 20%;
+    display: block;
+    border: none;
+    border-bottom: 4px solid var(--third-color);
+    margin: 20px 0;
 }
-.section_services .section_services_body .type_services{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px 0;
+
+
+.sticky-menu{
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 2px #000;
+    z-index: 1000;
+    transition: all .42s;
 }
-.type_services .type_service_header{
-    flex-basis: 16%;
-}
-.type_services .type_service_body{
-    flex-basis: 78%;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-.type_services .type_service_body .card_service{
-    min-width: calc(25% - 20px);
-    margin: 0 10px 10px 10px;
-    padding: 10px;
+
+
+
+/* section about */
+.section_about{
     border: 1px solid;
-    position: relative;
-    left: -20%;
-    transition: all .13s;
+    background-color: #f9f9f9;
 }
-
-
-
-
-.button_next_card_service, .button_previous_card_service{
-    flex-basis: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.button_next_card_service i, .button_previous_card_service i{
-    font-size: 1.8em;
-    border: 1px solid;
-}
-.button_next_card_service i:hover, .button_previous_card_service i:hover{
-    cursor: pointer;
-}
-/* section services */
+/* section about */

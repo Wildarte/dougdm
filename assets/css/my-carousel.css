@@ -1,0 +1,106 @@
+
+.section_services_body{
+    display: block;
+}
+.section_services_body .type_services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.type_service_header{
+    flex-basis: 20%;
+    padding-top: 24px;
+}
+.type_service_body{
+    flex-basis: 80%;
+    overflow: hidden;
+    padding: 0 32px;
+}
+.owl-stage-outer{
+    padding: 10px 10px 10px 0;
+}
+.type_service_body .card_service{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 8px;
+    padding: 10px;
+    position: relative;
+    transition: all .13s;
+}
+.type_service_body .card_service:hover{
+    transform: scale(1.08);
+    background-color: var(--third-color);
+    color: #fff;
+}
+.type_service_body .card_service:hover .card_service_bottom button{
+    border-color: #fff;
+    color: #fff;
+}
+.type_service_body .card_service:hover .owl-stage .owl-item{
+    border: none;
+}
+.card_service .card_service_header{
+    margin-bottom: 10px;
+}
+.card_service .card_service_header h3{
+    margin: 20px 0;
+}
+
+.card_service_header .card_icon{
+    width: 64px;
+}
+.card_service_header .card_icon svg{
+    font-size: 3em;
+}
+
+.type_services .type_service_body .card_service .card_service_header h3{
+    font-size: var(--sm-title);
+    font-weight: 600;
+}
+.card_service_body{
+    margin: 10px 0;
+}
+.card_service_body p{
+    font-size: calc(var(--text) - .05em);
+    font-weight: 300;
+}
+.card_service_bottom{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+.card_service_bottom button{
+    padding: 5px 10px;
+    font-size: var(--text);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    transition: all .17s;
+}
+.card_service_bottom button:hover{
+    cursor: pointer;
+    background-color: var(--main-color);;
+    color: #fff;
+    border: none;
+    transform: scale(1.1);
+    transition: all .17s;
+}
+.owl-next span, .owl-prev span{
+    font-size: 5em;
+}
+.owl-next span{
+    position: absolute;
+    right: -32px;
+    top: 30%;
+}
+.owl-prev{
+    position: absolute;
+    left: -32px;
+    top: 30%;
+}
+
+@media(max-width: 768px){
+    .type_service_body{
+        flex-basis: 100%;
+    }
+}
