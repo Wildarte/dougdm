@@ -40,7 +40,7 @@
      -->
 </head>
 <body>
-    
+    <div class="over_modal" style=""></div>
     <header class="header">
         <div class="over_header">
             <div class="container">
@@ -113,7 +113,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
                                 </div>
                                 <div class="card_service_bottom">
-                                    <button>Saiba Mais</button>
+                                    <button class="btn_open_modal" data-open-modal="1">Saiba Mais</button>
                                 </div>
                             </div>
                             <div class="card_service">
@@ -127,7 +127,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, saepe id minus amet ratione!</p>
                                 </div>
                                 <div class="card_service_bottom">
-                                    <button>Saiba Mais</button>
+                                    <button class="btn_open_modal" data-open-modal="2">Saiba Mais</button>
                                 </div>
                             </div>
                             <div class="card_service">
@@ -520,7 +520,40 @@
             </div>
         </div>
     </footer>
-
+    <div class="modal_service" id="modal-1">
+        <div class="modal_banner" style="background-image: url('./assets/img/background/hacker.jpg');"></div>
+        <div class="modal_content">
+            <header class="modal_header">
+                <h3>1) Pentest em aplicações Web</h3>
+                <span class="btn_close_modal" data-close-modal="1">
+                    <i class="bi bi-x-lg"></i>
+                </span>
+            </header>
+            <p>Lorem ipsum dolor sit amet. Sit autem ducimus ex delectus optio aut quia illum qui quia quia ut sunt inventore et corrupti assumenda? Quasi quia ut sint suscipit et internos error</p>
+            <div class="btns_modal">
+                <button class="btn_modal">Potifólio</button>
+                <button class="btn_modal">Orçamento</button>
+                <button class="btn_modal">Contato</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_service" id="modal-2">
+        <div class="modal_banner" style="background-image: url('./assets/img/background/hacker.jpg');"></div>
+        <div class="modal_content">
+            <header class="modal_header">
+                <h3>2) Pentest em aplicações Web</h3>
+                <span class="btn_close_modal" data-close-modal="2">
+                    <i class="bi bi-x-lg"></i>
+                </span>
+            </header>
+            <p>Lorem ipsum dolor sit amet. Sit autem ducimus ex delectus optio aut quia illum qui quia quia ut sunt inventore et corrupti assumenda? Quasi quia ut sint suscipit et internos error</p>
+            <div class="btns_modal">
+                <button class="btn_modal">Potifólio</button>
+                <button class="btn_modal">Orçamento</button>
+                <button class="btn_modal">Contato</button>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>

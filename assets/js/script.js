@@ -27,3 +27,31 @@ document.addEventListener('scroll', function(){
         this.body.style.paddingTop = 0;
     }
 });
+
+
+//close modal
+var btn_close_modal = document.querySelector(".btn_close_modal i");
+var over_modal = document.querySelector(".over_modal");
+over_modal.addEventListener("click", function(){
+    var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
+    document.querySelector(".over_modal").style.display = "none";
+    document.querySelector(".modal_service#modal-"+id_btn).classList.remove("open_modal");
+    console.log("valor do atributo: "+id_btn);
+});
+btn_close_modal.addEventListener("click", function(){
+    var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
+    document.querySelector(".over_modal").style.display = "none";
+    document.querySelector(".modal_service#modal-"+id_btn).classList.remove("open_modal");
+    console.log("valor do atributo: "+id_btn);
+})
+//close modal
+
+
+//open modal
+var open_modal = document.querySelector(".btn_open_modal");
+open_modal.addEventListener("click", function(){
+    var id_btn = open_modal.getAttribute("data-open-modal");
+    document.querySelector(".over_modal").style.display = "block";
+    document.querySelector(".modal_service#modal-"+id_btn).classList.add("open_modal")
+});
+//open modal
