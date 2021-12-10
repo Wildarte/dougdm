@@ -32,26 +32,27 @@ document.addEventListener('scroll', function(){
 //close modal
 var btn_close_modal = document.querySelector(".btn_close_modal i");
 var over_modal = document.querySelector(".over_modal");
+function close_modal(id){
+    //var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
+    document.querySelector(".over_modal").style.display = "none";
+    document.querySelector(".modal_service#modal-"+id).classList.remove("open_modal");
+    console.log("valor do atributo: "+id);
+};
 over_modal.addEventListener("click", function(){
-    var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
+    //var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
     document.querySelector(".over_modal").style.display = "none";
-    document.querySelector(".modal_service#modal-"+id_btn).classList.remove("open_modal");
-    console.log("valor do atributo: "+id_btn);
-});
-btn_close_modal.addEventListener("click", function(){
-    var id_btn = document.querySelector(".btn_close_modal").getAttribute('data-close-modal');
-    document.querySelector(".over_modal").style.display = "none";
-    document.querySelector(".modal_service#modal-"+id_btn).classList.remove("open_modal");
-    console.log("valor do atributo: "+id_btn);
+    document.querySelector(".modal_service.open_modal").classList.remove("open_modal");
+    console.log("valor do atributo: ");
 })
 //close modal
 
 
 //open modal
-var open_modal = document.querySelector(".btn_open_modal");
-open_modal.addEventListener("click", function(){
-    var id_btn = open_modal.getAttribute("data-open-modal");
+//var open_modal = document.querySelector(".btn_open_modal");
+function open_modal(id){
+    //var id_btn = open_modal.getAttribute("data-open-modal");
     document.querySelector(".over_modal").style.display = "block";
-    document.querySelector(".modal_service#modal-"+id_btn).classList.add("open_modal")
-});
+    document.querySelector(".modal_service#modal-"+id).classList.add("open_modal")
+};
 //open modal
+
