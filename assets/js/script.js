@@ -1,5 +1,5 @@
 var n = 0;
-var txt = "Ouvir. Entender. Melhorar.";
+var txt = "Briefing, Criação, Implementação e Desenvolvimento";
 var speed = 100;
 
 function typeWriter() {
@@ -56,3 +56,12 @@ function open_modal(id){
 };
 //open modal
 
+
+
+//open menu mobile
+document.querySelector(".btn_open_menu_mobile i").addEventListener("click", function(){
+    document.querySelector(".header_main_content").classList.add("open_menu_mobile");
+});
+document.querySelector(".close_menu_mobile i").addEventListener("click", function(){
+    document.querySelector(".header_main_content").classList.remove("open_menu_mobile");
+});

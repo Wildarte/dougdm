@@ -10,34 +10,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/my-carousel.css">
-    <title>dm11</title>
-    <!-- 
-    <style>
-        .owl-carousel{
-            border: 1px solid;
-            display: flex;
-            width: 900px;
-            margin: auto;
-            position: relative;
-        }
-        .owl-carousel .card{
-            border: 1px solid;
-        }
-        .owl-next span, .owl-prev span{
-            font-size: 5em;
-        }
-        .owl-next span{
-            position: absolute;
-            right: -32px;
-            top: 30%;
-        }
-        .owl-prev{
-            position: absolute;
-            left: -32px;
-            top: 30%;
-        }
-    </style>
-     -->
+    <title>Site</title>
+   
 </head>
 <body>
     <div class="over_modal" style=""></div>
@@ -51,13 +25,23 @@
             </div>
         </div>
         <div class="header_main">
-            <div class="container header_main_content">
+            <div class="header_logo_mobile">
+                <img src="./assets/img/logo/LOGO-white.png" alt="">
+            </div>
+            <div class="btn_open_menu_mobile">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="header_main_content">
+                
                 <div class="header_logo">
-                    <img src="./assets/img/logo/logo-DM11-Branca.png" alt="">
+                    <img src="./assets/img/logo/LOGO-white.png" alt="">
+                    <span class="close_menu_mobile">
+                        <i class="bi bi-x-lg"></i>
+                    </span>
                 </div>
                 <nav class="header_menu">
                     <ul>
-                        <li><a  href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">Serviços</a></li>
                         <li><a href="#">Parceiros</a></li>
                         <li><a href="#">Seja um Parceiro</a></li>
@@ -68,6 +52,12 @@
                 <div class="header_cta">
                     <a href="#">Atendimento</a>
                 </div>
+                <div class="header_social_mobile">
+                    <a class="" href="tel:999999999"><i class="bi bi-telephone"></i> 9999999999</a>
+                    <a class="" href="malto:contato@site.com.br"><i class="bi bi-envelope"></i> contato@site.com.br</a>
+                    <a class="mobile_social" href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a class="mobile_social" href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                </div>
             </div>
         </div>
     </header>
@@ -76,7 +66,7 @@
         <section class="home_intro">
             <div class="container home_intro_content">
                 <h1>[ <span id="title_intro"></span> ]</h1>
-                <p id="subtitle_intro">É isso que fazemos em nossos clientes</p>
+                <p id="subtitle_intro">Foco em resultados, buscando eficiência</p>
                 <div class="home_intro_ctas">
                     <button class="home_cta_atend">Atendimento</button>
                     <button href="#servicos" class="home_cta_services">Serviços</button>
@@ -495,29 +485,30 @@
             
         </section>
 
-        <section class="section">
-            <div>
-
-            </div>
-            <div>
-                <h2>Entre em contato</h2>
-                <p>Avenida xx - xxxxxxxxxxxxx, 3232,
-                    xxxxxxx - 08321-212</p>
-                <a href="tel:+55995594995">55995594995</a>
-                <a href="mailto:contato@seusite.com">contato@seusite.com</a>
+        <section class="section_contact">
+            <div class="section_contact_content">
+                <div class="contact_left" style="background-image: url('./assets/img/background/bg_contact.jpg');"></div>
+    
+                <div class="contact_right">
+                    <h2>Entre em contato</h2>
+                    <p>Avenida xx - xxxxxxxxxxxxx, 3232,
+                        xxxxxxx - 08321-212</p>
+                    <a href="tel:+55995594995">55995594995</a>
+                    <a href="mailto:contato@seusite.com">contato@seusite.com</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <div>
+    <footer class="section_footer">
+        <div class="container section_footer_content">
+            <div class="footer_copuright">
                 <p>2021 - todos os direitos reservados</p>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="footer_logo">
+                <img src="./assets/img/logo/LOGO.png" alt="">
             </div>
-            <div>
+            <div class="footer_social">
                 <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
                 <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
             </div>
