@@ -276,7 +276,7 @@ header.header{
 .section_body{
     position: relative;
     padding: 80px 0;
-    max-width: 1400px;
+    width: 1400px;
     margin: auto;
 }
 .bg_about_dots{
@@ -424,12 +424,13 @@ header.header{
     align-self: flex-end;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .modal_service .modal_content .btns_modal .btn_modal{
     font-size: var(--text);
     min-height: 32px;
     margin-top: auto;
+    margin-right: 10px;
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid;
@@ -729,6 +730,36 @@ header.header{
     .home_intro_content p{
         text-align: center;
         font-size: 1.4em;
+    }
+    .modal_service{
+        flex-wrap: wrap;
+        width: 90%;
+        height: 80%;
+        margin-top: -300px;
+        margin-left: -45%;
+    }
+    .modal_service .modal_banner, .modal_service .modal_content{
+        flex-basis: 100%;
+    }
+    .modal_content .modal_header{
+        margin-bottom: 10px;
+    }
+    .modal_content .modal_header h3{
+        font-size: var(--sm-title);
+    }
+    .modal_service .modal_content p{
+        font-size: .9em;
+    }
+    .modal_content .modal_header h3::after{
+        height: 2px;
+        margin: 10px 0;
+    }
+    .modal_content{
+        height: 60%;
+        overflow: auto;
+    }
+    .modal_service .modal_banner{
+        height: 40%;
     }
 }
 
